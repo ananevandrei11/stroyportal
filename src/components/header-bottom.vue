@@ -134,6 +134,8 @@ export default {
     },
     setVal: function () {
       this.itemSearch = event.target.innerText;
+      let autocompBlock = document.getElementById('autocomplite');
+      autocompBlock.classList.remove('open');
     }
   },
 };
