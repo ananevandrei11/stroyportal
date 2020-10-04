@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'") format("ttf"),
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+.wrapper {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+@import "header-top.scss";
+@import "header-bottom.scss";

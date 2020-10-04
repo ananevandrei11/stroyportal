@@ -1,0 +1,67 @@
+  .nav {
+    min-height: 32px;
+    background: #FAFBFC;
+    border-bottom: 1px solid #ECEFF1;
+
+    &-item,
+    &-link {
+      font-size: 12px;
+      line-height: 20px;
+      color: #708598;
+    }
+
+    &-item__select {
+      cursor: pointer;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    &-list__other {
+      min-width: 322px;
+
+      span {
+        margin-left: 2px;
+        width: 18px;
+        height: 18px;
+        background: url(../images/tick.svg) center / contain no-repeat;
+      }
+    }
+
+    &-list__location {
+      min-width: 156px;
+
+      span {
+        margin-right: 8px;
+        width: 12px;
+        height: 14.4px;
+        background: url(../images/location.svg) center / contain no-repeat;
+      }
+    }
+  }
+  @media screen and (max-width:992px) {
+    .nav {
+      padding: 14px;
+    }
+  }
+  @media screen and (max-width:480px) {
+    .nav {
+      .wrapper {
+        flex-wrap: wrap;
+      }
+      &-list {
+        width: 100%;
+      }
+      &-list__location {
+        justify-content: center;
+        margin-bottom: 14px;
+      }
+      &-list__other {
+        min-width: 280px;
+      }
+      &-item {
+        text-align: center;
+      }
+    }
+  }
